@@ -2,21 +2,36 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: content-box;
-
+}
+.toolbar { 
+	margin-top: 10px;
+} 
+.toolbar input{
+	padding: 5px 0 5px 5px;
+	width: 80%;
+	border: 1px solid #ededed;
+	border-radius: 5px;
+	font-weight: 400;
+	color: #4b4b4b;
+	font-family: 'Roboto',sans-serif;
+}
+.btn-success{
+	margin-top: -52px;
+    margin-left: 230px;
 }
 .emoji {  
-  width: 30px;
+  width: 25px;
 }
 .listEmojis li
 {
 	display: inline;
 }
 .listEmojis{
-	padding-bottom: -100px;
+	
 	position: relative;
-	top: -118px;
+	top: -110px;
 	background-color:#ede9e4;
-	border: 1px solid gray;
+	width: 100px;
 }
 body {
 	background-color: #dfdfdf;
@@ -24,16 +39,13 @@ body {
     color: #4b4b4b;
     text-rendering: optimizeLegibility;
 }
-
 li { 
 	list-style: none; 
 }
-
 ul { 
 	margin:0; 
 	padding: 0; 
 }
-
 .clearfix:after {
 	clear: both;
 	content: ' ';
@@ -84,8 +96,14 @@ aside.w-contacts header {
 }
 
 .avatar img {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.avatar img:hover {
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	margin-right: 10px;
 }
