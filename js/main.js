@@ -88,6 +88,10 @@ function Whatsapp()
 		cabeceraChatList.innerHTML= htmlCabeceraChatList;		
 		var chatList = document.getElementById('chat');
 		chatList.innerHTML='';
+		console.log(p.textContent);
+		var divChat = document.getElementById('chat');
+		var htmlMessageIn = '<div class="w-message w-message-in"><div class="w-message-text"><h5 style="color:black">'+h3.textContent+'<h5><p>' + p.textContent + '</p><div class="time">'+timeDiv.textContent+'</div></div></div>';
+		divChat.innerHTML += htmlMessageIn;
 	};
 	function changeImage(evt){
 		var divForm= document.getElementById('miImage');
@@ -188,6 +192,7 @@ var me = new Person('Gerson');
 var zare = new Person('Zare');
 var liset = new Person('Liset');
 var nataly = new Person('Nataly');
+
 var laboratoria= new Person('Laboratoria');
 zare.color='skyblue';
 liset.color='orange';
